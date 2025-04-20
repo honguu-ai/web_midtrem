@@ -5,12 +5,12 @@ body {
   background-color: #17171b;
   color: #f5f5f5;
 }
+section a {
+  text-decoration-line: none;
+  color: white;
+}
 header {
-  background: linear-gradient(
-    to bottom,
-    #3b3b3b,
-    #2f2f2f
-  ); /* Gradient from #3B3B3B to #2F2F2F */
+  background-color: #202026;
   color: white;
   padding: 1.5rem 0;
   text-align: center;
@@ -72,7 +72,7 @@ footer {
   opacity: 0.95;
 }
 footer a {
-  color: #4caf50;
+  color: #a78bfa;
   text-decoration: none;
   font-weight: bold;
 }
@@ -83,6 +83,10 @@ footer a:hover {
 header a {
   text-decoration-line: none;
   color: white;
+}
+nav a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 768px) {
   body {

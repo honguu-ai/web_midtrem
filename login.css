@@ -1,0 +1,42 @@
+body {
+  background: #000;
+  color: #00ff88;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  margin: 0;
+  padding: 30px;
+  user-select: none;
+}
+
+#login-screen {
+  white-space: pre-wrap;
+  text-shadow: 0 0 6px #00ff88;
+  line-height: 1.5;
+  font-weight: 600;
+  overflow-y: auto; /* 내용이 넘칠 경우 세로 스크롤바 표시 */
+  max-height: calc(100vh - 60px); /* 화면 높이에서 body padding을 뺀 값 */
+
+  /* 스크롤바 숨기기 (Webkit 기반 브라우저용 - Chrome, Safari, Edge) */
+  -ms-overflow-style: none; /* IE 및 Edge 구 버전 */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Safari, Edge 등 Webkit 기반 브라우저용 스크롤바 숨기기 */
+#login-screen::-webkit-scrollbar {
+  display: none; /* 스크롤 바 자체를 숨김 */
+}
+
+.blinking-cursor {
+  display: inline-block;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

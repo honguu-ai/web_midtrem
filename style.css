@@ -141,3 +141,32 @@ nav a:hover {
     font-size: 10px;
   }
 }
+
+/* Light Theme */
+body.light-theme {
+  background-color: #f5f5f5;
+  color: #202026;
+}
+
+body.light-theme header,
+body.light-theme nav,
+body.light-theme section,
+body.light-theme footer {
+  background-color: #ffffff;
+  color: #202026;
+}
+
+body.light-theme nav a,
+body.light-theme footer a {
+  color: #4f46e5;
+}
+
+body.light-theme section {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme nav a:hover,
+body.light-theme footer a:hover {
+  background-color: #e0e7ff;
+  color: #1e1b4b;
+}

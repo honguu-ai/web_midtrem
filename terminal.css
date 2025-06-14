@@ -1,0 +1,52 @@
+/* terminal.css */
+
+body {
+  background: #000;
+  color: #00ff88;
+  font-family: 'Courier New', Courier, monospace; /* body의 font-family */
+  font-size: 1rem;
+  margin: 0;
+  padding: 30px;
+  user-select: none;
+}
+
+#terminal {
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  margin-right: 8px;
+}
+
+input {
+  background: none;
+  border: none;
+  color: #00ff88; /* 색상은 이미 통일하셨을 겁니다. */
+  outline: none;
+  /* 이 두 줄을 추가하거나 수정합니다. */
+  font-family: 'Courier New', Courier, monospace; /* body와 동일하게 명시 */
+  font-weight: 600; /* #login-screen과 동일하게 600으로 설정 */
+  font-size: 1em; /* body에서 상속받는 font-size와 동일 */
+  flex: 1;
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
